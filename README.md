@@ -12,7 +12,9 @@ My solutions for FizzBuzz and FizzBuzzBazz follow:
 
 # FizzBuzz
 
-## FizzBuzz Naive
+## FizzBuzz Naive -- Three Divides
+
+The naive solution uses 3 divides.
 
 ```c
 #include <stdio.h>
@@ -32,9 +34,9 @@ int main()
 
 ```
 
-## FizzBuzz Array 15
+## FizzBuzz Array -- One Divide
 
-We can use a single division (via Least Common Multiple) instead of three divisions.
+We can get rid of all branches if we can use a single division (via Least Common Multiple) instead of three divisions.
 
 ```c
 #include <stdio.h>
@@ -76,10 +78,9 @@ In C the [Calling Convention](https://en.wikipedia.org/wiki/Calling_convention) 
         printf( "Fizz", 123 );
 ```
 
-
 ## FizzBuzz Linearization
 
-If we are trying to minimize space we can linearizing the nested if-else conditions into a linear array. We convert the if-else-thens into an binary number and thus we end up with an array of 4 elements.
+If we are trying to minimize space we can linearize the nested if-else conditions into a linear array. We convert the if-else-thens into an binary number and thus we end up with an array of 4 elements.
 
 ```
 #include <stdio.h>
@@ -108,7 +109,7 @@ int main()
 
 ```
 
-## FizzBuzz Without division
+## FizzBuzz Counter -- Zero Divides
 
 We can optimize the division completely out:
 
@@ -484,3 +485,8 @@ Fizz
 Bazz
 Fizz
 ```
+
+# Optimization
+
+Write-up in-progress...
+
